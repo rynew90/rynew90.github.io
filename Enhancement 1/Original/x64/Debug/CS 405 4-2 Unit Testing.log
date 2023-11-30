@@ -1,0 +1,8 @@
+﻿  test.cpp
+C:\Users\screa\source\repos\CS 405 4-2 Unit Testing\test.cpp(17,19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\screa\source\repos\CS 405 4-2 Unit Testing\test.cpp(157,5): warning C4002: too many arguments for function-like macro invocation 'ASSERT_TRUE'
+C:\Users\screa\source\repos\CS 405 4-2 Unit Testing\test.cpp(165,5): warning C4002: too many arguments for function-like macro invocation 'ASSERT_TRUE'
+C:\Users\screa\source\repos\CS 405 4-2 Unit Testing\test.cpp(196,5): warning C4002: too many arguments for function-like macro invocation 'ASSERT_TRUE'
+C:\Users\screa\source\repos\CS 405 4-2 Unit Testing\test.cpp(204,5): warning C4834: discarding return value of function with 'nodiscard' attribute
+C:\Users\screa\source\repos\CS 405 4-2 Unit Testing\test.cpp(212,5): warning C4002: too many arguments for function-like macro invocation 'ASSERT_TRUE'
+  CS 405 4-2 Unit Testing.vcxproj -> C:\Users\screa\source\repos\CS 405 4-2 Unit Testing\x64\Debug\CS 405 4-2 Unit Testing.exe

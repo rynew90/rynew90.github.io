@@ -1,0 +1,62 @@
+{
+    "1": {
+        "rec_num": "1",
+        "animal_id": "A696001",
+        "name": "Lucy",
+        "sex_upon_outcome": "Female",
+        "animal_type": "Dog",
+        "breed": "Cardigan Welsh Corgi Mix",
+        "age_upon_outcome": "5 Years",
+        "color": "Sable/White",
+        "outcome_type": "Rabies Risk",
+        "rescue_type": "None"
+    },
+    "2": {
+        "rec_num": "2",
+        "animal_id": "A696002",
+        "name": "Rocky",
+        "sex_upon_outcome": "Male",
+        "animal_type": "Cat",
+        "breed": "Tabby",
+        "age_upon_outcome": "4 Years",
+        "color": "Orange/White",
+        "outcome_type": "Intact",
+        "rescue_type": "Water Rescue"
+    },
+    "3": {
+        "rec_num": "3",
+        "animal_id": "A696003",
+        "name": "Fido",
+        "sex_upon_outcome": "Male",
+        "animal_type": "Dog",
+        "breed": "German Shepard",
+        "age_upon_outcome": "2 Years",
+        "color": "Black/Brown",
+        "outcome_type": "Neutered",
+        "rescue_type": "Water Rescue"
+    },
+    "4": {
+        "rec_num": "4",
+        "animal_id": "A696004",
+        "name": "Virginia",
+        "sex_upon_outcome": "Female",
+        "animal_type": "Cat",
+        "breed": "Tiffany",
+        "age_upon_outcome": "3 Years",
+        "color": "Black/Dark Brown",
+        "outcome_type": "Spayed",
+        "rescue_type": "Disaster Rescue"
+    },
+    "5": {
+        "rec_num": "5",
+        "animal_id": "A696005",
+        "name": "Victor",
+        "sex_upon_outcome": "Male",
+        "animal_type": "Dog",
+        "breed": "Siberian Husky",
+        "age_upon_outcome": "6 Years",
+        "color": "White/Black",
+        "outcome_type": "Intact",
+        "rescue_type": "Mountain/Wilderness Rescue"
+    }
+}

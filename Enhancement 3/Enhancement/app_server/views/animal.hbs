@@ -1,0 +1,95 @@
+{{!-- /*
+* Author: Ryne Williams
+* Date: 11/26/2023
+* File: animal.hbs
+* Version: 1.0
+* Description: This file contains the html to display the list of animals in the database in a table, contains radio buttons to filter animals by rescue type,
+*              and contains method to allow radio buttons to filter out table data.
+*/ --}}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>Animals - Grazioso Salvare</title> <!-- Title of webpage for web browser tab -->
+    <link rel='stylesheet' href='/css/style.css' type="text/css" />
+	<script>
+        function filterTable(rescue_type) { // Function to allow radio buttons to filter out animals based on selection
+            var rows = document.querySelectorAll('tbody tr');
+
+            rows.forEach(function(row) { // For each row in the table
+                var rescueTypeColumn = row.cells[row.cells.length - 1]; // Retrieve last cell in the current row containing the rescue type information
+                if (rescue_type === 'All' || rescueTypeColumn.textContent === rescue_type) { // If 'all' button selected or rescue type selected
+                    row.style.display = ''; // display information for that button
+                } else {
+                    row.style.display = 'none'; // display nothing
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+	<div id="background">
+		<div id="page">
+			{{> header}} <!-- header for the webpage that displays the links for all pages in the webpage -->
+			<div id="contents">
+				<div class="box">
+					<div>
+						<div class="body">
+							<h1>Animals</h1> <!-- Webpage title -->
+							<hr>
+							<div>
+								<label>Rescue Type:</label> <!-- Radio Button for selecting animal rescue type -->
+								<input type="radio" id="waterRescue" name="rescue_type" value="Water Rescue" onclick="filterTable('Water Rescue')">
+								<label for="Water Rescue">Water Rescue</label>
+
+								<input type="radio" id="mountainRescue" name="rescue_type" value="Mountain/Wilderness Rescue" onclick="filterTable('Mountain/Wilderness Rescue')">
+								<label for="mountainRescue">Mountain/Wilderness Rescue</label>
+
+								<input type="radio" id="disasterRescue" name="rescue_type" value="Disaster Rescue" onclick="filterTable('Disaster Rescue')">
+								<label for="disasterRescue">Disaster Rescue</label>
+
+								<input type="radio" id="all" name="rescue_type" value="All" checked onclick="filterTable('All')">
+								<label for="all">All</label>
+							</div>
+							<table border="1">
+								<thead>
+									<tr> <!-- table for displaying animals in grid format -->
+										<th>Record Number</th>
+										<th>Animal ID</th>
+										<th>Name</th>
+										<th>Sex upon Outcome</th>
+										<th>Animal Type</th>
+										<th>Breed</th>
+										<th>Age upon Outcome</th>
+										<th>Color</th>
+										<th>Outcome Type</th>
+										<th>Rescue Type</th>
+									</tr>
+								</thead>
+								<tbody>
+									{{#each animals}} <!-- iterates over each animal in the database -->
+									<tr>
+										<td>{{this.rec_num}}</td>
+										<td>{{this.animal_id}}</td> 
+										<td>{{this.name}}</td>
+										<td>{{this.sex_upon_outcome}}</td>
+										<td>{{this.animal_type}}</td>
+										<td>{{this.breed}}</td>
+										<td>{{this.age_upon_outcome}}</td>
+										<td>{{this.color}}</td>
+										<td>{{this.outcome_type}}</td>
+										<td>{{this.rescue_type}}</td>
+									</tr>
+									{{/each}}
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div> 
+		</div>
+			{{> footer}} <!-- Footer for webpage containing links to each page in the web application -->
+	</div>
+</body>
+</html>
