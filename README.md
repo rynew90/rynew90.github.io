@@ -1,2 +1,2 @@
-# **rynew90.github.io**
-## CS 499 Computer Science Capstone
+# **Ryne Williams ePortfolio**
+### CS 499 Computer Science Capstone
